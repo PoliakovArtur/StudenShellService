@@ -1,10 +1,11 @@
 package com.example.repository.adapter;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
+import com.example.model.Student;
 
 public interface StudentRepositoryAdapter {
-    String findAll() throws JsonProcessingException;
-    String findById(Long id);
-    String save(String firstName, String lastName, String age);
-    String deleteById(Long id);
+    void findAll();
+    void findById(String id);
+    void save(String firstName, String lastName, String age);
+    void deleteById(String id);
+    void clear();
 }
