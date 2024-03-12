@@ -33,6 +33,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return format("Студент: id {0}, имя {1}, фамилия {2}, возраст {3}", id, firstName, lastName, age);
+        return format("Студент: {0} {1} {2} {3}", id, firstName, lastName, age);
     }
 }

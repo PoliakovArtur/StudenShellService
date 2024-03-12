@@ -4,6 +4,8 @@ spring:
     username: ${DB_USERNAME:root}
     password: ${DB_PASSWORD:pass}
   jpa:
-    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: ${DDL_AUTO:create}
+student-shell-service:
+  enable-beans:
+    student-generator: ${RANDOM_STUDENTS:false}
